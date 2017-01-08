@@ -4,7 +4,16 @@
 'use strict'
 
 var file = {};
-file.computeAverage = function(a) {
+file.findMinMax = function(a) {
+   var lowest = 0;
+ for (var i = 1; i < a.length; i++) {
+  if (a[i] < a[lowest]) lowest = i;
+ }
+ return lowest;
+
+}
+
+file.aritGeo = function(a) {
   
    
     min = a[0];
@@ -16,6 +25,8 @@ file.computeAverage = function(a) {
     }
 
 }
+
+
 
 
 module.exports = file;
