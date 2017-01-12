@@ -53,14 +53,19 @@ file.dataTypesArrays = function(a){
     }
     return 'undefined';
 
-  for(var counter=0; counter<=a.length;counter++){
+ 
+  if(a==[0,1,2]){
+     
+   for(var counter=0; counter<=a.length;counter++){
     
-    if(a==[0,1,2]){
-       a=counter;
-      
+     if(a = a[counter]){
+        a=a[counter]
+     }
+
     }
      return a; 
   }
+
 }
 
 file.dataTypesCallback = function(a){
